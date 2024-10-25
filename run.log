@@ -1,0 +1,182 @@
+# vsim apb_top1 -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 16:49:37 on Aug 19,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt8
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.apb_top1(fast)
+# Loading work.APB_Slave(fast)
+# Loading work.apb_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon1.sv Line: 15
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: mon2.sv Line: 15
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+add wave -position insertpoint sim:/apb_top1/DUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sivag  Hostname: DESKTOP-TH1P4EE  ProcessID: 12300
+#           Attempting to use alternate WLF file "./wlftkw3cmh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkw3cmh
+# (vish-4014) No objects found matching '/apb_top1/DUT/*'.
+exit
+cd {D:\UVM\SRAM_UVM}
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+quit -sim
+# End time: 16:51:49 on Aug 19,2024, Elapsed time: 0:02:12
+# Errors: 2, Warnings: 4
+cd {D:\UVM\SRAM_UVM}
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 16:52:03 on Aug 19,2024
+# vlog -reportprogress 300 top.sv "+incdir+C:/questasim64_10.7c/verilog_src/uvm-1.1d/src" C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/uvm_pkg.sv 
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface sram_intf
+# -- Compiling module sram_dut
+# -- Compiling module sram_top
+# -- Compiling package uvm_pkg (uvm-1.1d Built-in)
+# 
+# Top level modules:
+# 	sram_top
+# End time: 16:52:05 on Aug 19,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim sram_top -sv_lib C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi -l run.log 
+# Start time: 16:52:05 on Aug 19,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.sram_top(fast)
+# Loading work.sram_dut(fast)
+# Loading work.sram_intf(fast)
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: input_monitor.sv Line: 21
+# ** Warning: (vsim-3764) Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: output_monitor.sv Line: 20
+# Loading C:/questasim64_10.7c/uvm-1.1d/win64/uvm_dpi.dll
+run
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test sram_test...
+# UVM_INFO output_monitor.sv(35) @ 2: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 2: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 2: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 6: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO driver.sv(51) @ 8: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO output_monitor.sv(35) @ 10: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 10: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 10: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 14: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 18: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 18: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 18: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO driver.sv(51) @ 20: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO scoreboard.sv(38) @ 22: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 26: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 26: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 26: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 30: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO driver.sv(51) @ 32: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO output_monitor.sv(35) @ 34: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 34: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 34: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 38: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 42: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 42: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 42: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO driver.sv(51) @ 44: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO scoreboard.sv(38) @ 46: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 50: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 50: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 50: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 54: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO driver.sv(51) @ 56: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO output_monitor.sv(35) @ 58: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 58: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 58: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 62: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 66: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 66: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 66: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO driver.sv(51) @ 68: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO scoreboard.sv(38) @ 70: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 74: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 74: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 74: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 78: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO driver.sv(51) @ 80: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO output_monitor.sv(35) @ 82: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 82: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 82: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 86: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 90: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 90: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 90: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO driver.sv(51) @ 92: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO scoreboard.sv(38) @ 94: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 98: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 98: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 98: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+run
+# UVM_INFO scoreboard.sv(38) @ 102: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO driver.sv(51) @ 104: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO output_monitor.sv(35) @ 106: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 106: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 106: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO scoreboard.sv(38) @ 110: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 114: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 114: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 114: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO driver.sv(51) @ 116: uvm_test_top.env.agent1.drv [Driver] Drv transaction dut
+# UVM_INFO scoreboard.sv(38) @ 118: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# UVM_INFO output_monitor.sv(35) @ 122: uvm_test_top.env.agent2.out_mon [output_mon] addr=0,din=0,wr=0,dout=0
+# UVM_INFO output_monitor.sv(36) @ 122: uvm_test_top.env.agent2.out_mon [sram_output_monitor] output_mon transactions
+# UVM_INFO input_monitor.sv(39) @ 122: uvm_test_top.env.agent1.inp_mon [sram_input_monitor] input monitor transactions
+# UVM_INFO C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 126: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO scoreboard.sv(38) @ 126: uvm_test_top.env.scb [SCB: DATA MATCHED] DUT dout=0, Ref dout=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   76
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Driver]    10
+# [RNTST]     1
+# [SCB: DATA MATCHED]    16
+# [TEST_DONE]     1
+# [output_mon]    16
+# [sram_input_monitor]    16
+# [sram_output_monitor]    16
+# ** Note: $finish    : C:/questasim64_10.7c/verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 126 ns  Iteration: 54  Instance: /sram_top
+# End time: 16:54:48 on Aug 19,2024, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 2
